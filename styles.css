@@ -53,6 +53,17 @@ h2 {
 .profile {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.3s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .profile:last-child {
@@ -121,6 +132,15 @@ button:hover {
 
 .chat-message {
     margin-bottom: 0.5rem;
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .chat-message p {
