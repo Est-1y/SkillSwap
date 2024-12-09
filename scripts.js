@@ -12,6 +12,28 @@ function addMessage(sender, text) {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+// displaying the modal
+function viewProfile(name, skillsOffered, skillsSought) {
+    const profileModal = document.createElement('div');
+    profileModal.classList.add('profile-modal');
+    profileModal.innerHTML = `
+        <div class="modal-content">
+            <h2>${name}</h2>
+            <p><strong>Skills Offered:</strong> ${skillsOffered}</p>
+            <p><strong>Skills Sought:</strong> ${skillsSought}</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    `;
+    document.body.appendChild(profileModal);
+}
+
+function closeModal() {
+    const modal = document.querySelector('.profile-modal');
+    if (modal) {
+        modal.remove();
+    }
+}
+
 // sending a message
 sendMessageButton.addEventListener('click', () => {
     const messageText = messageInput.value.trim();
