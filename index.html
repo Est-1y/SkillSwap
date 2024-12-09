@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Skills Trading Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#chat">Chat</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profiles">
+            <h2>User Profiles</h2>
+            <div class="profile">
+                <h3>George H.</h3>
+                <p><strong>Skills Offered:</strong> Graphic Design, Photography</p>
+                <p><strong>Skills Sought:</strong> Web Development</p>
+                <button>View Profile</button>
+            </div>
+            <div class="profile">
+                <h3>Esther O.</h3>
+                <p><strong>Skills Offered:</strong> Web Development, Python Programming</p>
+                <p><strong>Skills Sought:</strong> Copywriting</p>
+                <button>View Profile</button>
+            </div>
+            <div class="profile">
+              <h3>Sandy Hog</h3>
+              <p><strong>Skills Offered:</strong> Video Editing,  Copywriting</p>
+              <p><strong>Skills Sought:</strong>Python Programming, Photography</p>
+              <button>View Profile</button>
+
+            </div>
+        </section>
+        
+        <section id="chat">
+            <h2>Secure Chat and Negotiation</h2>
+            <div id="chat-box">
+                <div class="chat-message">
+                    <p><strong>George:</strong> Hi Esther, I can help with your website!</p>
+                </div>
+                <div class="chat-message">
+                    <p><strong>Esther:</strong> That’s great George! Let’s discuss the details.</p>
+                </div>
+                <div class="chat-message">
+                    <p><strong>Esther:</strong> Hi Sandy, I can help with python programming</p>
+                </div>
+                <div class="chat-message">
+                    <p><strong>Sandy:</strong> Hello Esther, That's awesome, can we discuss details?</p>
+                </div>
+            </div>
+            <input type="text" id="message" placeholder="Type your message here">
+            <button id="send-message">Send</button>
+        </section>
+        
+        <section id="reviews">
+            <h2>Skill Rating and Review</h2>
+            <div class="review">
+                <h3>Review for George</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                <p><strong>Comment:</strong> "George was professional and delivered great designs on time!"</p>
+            </div>
+            <div class="review">
+                <h3>Review for Esther</h3>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Comment:</strong> "Esther's python programming kills were amazing"</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SkillSwap</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
