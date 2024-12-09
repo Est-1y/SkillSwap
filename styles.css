@@ -59,6 +59,42 @@ h2 {
     border-bottom: none;
 }
 
+/* Modalg */
+.profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.profile-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+.profile-modal button {
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-modal button:hover {
+    background-color: #005bb5;
+}
+
 button {
     background-color: #0078D4;
     color: white;
